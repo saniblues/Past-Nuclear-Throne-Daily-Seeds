@@ -37,5 +37,10 @@
 			draw_set_halign(fa_center);
 			draw_set_valign(fa_center);
 			draw_set_blend_mode(bm_normal);
+			// Alias. Awkwardly displays your name over everything. For demonstrative purposes only.
+			draw_set_font(fntChat);
+			draw_set_halign(fa_left);
+			draw_set_valign(fa_top);
+			draw_text_nt(xst, yst, player_get_alias(index) + " P" + string(index));
 		}
 	}
